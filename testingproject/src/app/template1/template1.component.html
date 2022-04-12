@@ -1,0 +1,19 @@
+<form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+    <div>
+        <div>
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" required
+        id="email" ngModel name="emailField" #emailField="ngModel">
+        <div *ngFor="emailField.touched && emailField.invalid" 
+        class="text-danger">this field is mandatory</div>
+        </div>
+        <div>
+        <label for="pasword" class="form-label"></label>
+        <input type="password" class="form-control" required minlength="3" maxlength="9"
+        id="password" ngModel name="password" #password="ngModel">
+        <div *ngFor="password.touched && password.invalid" 
+        class="text-danger">this field is mandatory</div>
+       </div>
+        <button type="submit"[disabled]="loginForm.invalid" class="btn btn-primary">Submit</button>
+    </div>
+</form>

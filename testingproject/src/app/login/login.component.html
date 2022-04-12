@@ -1,0 +1,31 @@
+
+
+
+<input type="text" placeholder="enter id" [(ngModel)]="id">
+<input type="text" placeholder="enter name" [(ngModel)]="name">
+
+<input type="number" placeholder="enter price" [(ngModel)]="price">
+
+<input type="text" placeholder="enter brand" [(ngModel)]="brand">
+
+<button type="submit" (click)="addproducts()">addproduct</button>
+
+<button type="submit" (click)="updateproducts()">updateproduct</button>
+<button type="submit" (click)="delete()">delete</button>
+
+
+<table>
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>price</th>
+        <th>brand</th>  
+    </tr>
+
+    <tr *ngFor="let emp of akhi">
+        <td>{{emp.id}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.price}}</td>
+        <td>{{emp.brand}}</td>  
+    </tr>
+</table>

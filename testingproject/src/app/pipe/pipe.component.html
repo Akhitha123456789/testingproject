@@ -1,0 +1,14 @@
+<p>pipe works!</p>
+<input type="text" class="form-control mb-3 mb-2 border border-dark"
+placeholder="enter by search names" [(ngModel)]="searchItem">
+
+<table class="table">
+    <tr>
+        <th>city</th>
+        <th>age</th>
+    </tr>
+    <tr *ngFor="let data of empData | akitha :searchItem">
+        <td>{{data.city}}</td>
+        <td>{{data.age}}</td>
+    </tr>
+</table>

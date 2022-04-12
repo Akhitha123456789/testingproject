@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "name": "Raj Kishore",
+      "brand": "Human",
+      "price": 56677,
+      "id": 1
+    },
+    {
+      "id": 3,
+      "name": "pooja",
+      "brand": "girl",
+      "price": 4567
+    },
+    {
+      "name": "keerthi",
+      "brand": "girl",
+      "price": 54,
+      "id": 4
+    }
+  ]
+}

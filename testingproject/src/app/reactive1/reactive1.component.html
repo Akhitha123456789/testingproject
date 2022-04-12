@@ -1,0 +1,16 @@
+<p>reactive1 works!</p>
+<div class="col-md-4 offset-md-4">
+    
+    <label for="email">email</label>
+    <input type="email"class="form-control" formControlNaame="email"
+    [ngClass]="{'errorClass':f.email.errors && f.email.invalid}">
+<span *ngIf="loginForm.get('email').touched && loginForm.get('email').hasError('required')">
+
+</span>
+
+
+    <label for="password">password</label>
+    <input type="number"class="form-control" formControlNaame="password"
+    [ngClass]="{'errorClass':f.email.errors && f.email.invalid}">
+    <button type="submit">submit</button>
+</div>
